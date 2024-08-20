@@ -54,7 +54,7 @@ open class RouteOptions: NSObject {
      - parameter points: An array of `CLLocationCoordinate2D` objects representing coordinates that the route should visit in chronological order. The array must contain at least two coordinates (the source and destination).
      */
     public init(points: [CLLocationCoordinate2D]) {
-        assert(points.count >= 2, "Specify at least two points.")
+        assert(points.count >= 1, "Specify at least one point.")
         self.points = points
     }
 
