@@ -132,7 +132,7 @@ open class FlexibleRouteOptions: RouteOptions {
     internal override var params: [URLQueryItem] {
         var params = super.params
 
-        params.append(URLQueryItem(name: "ch.disable", value: "true"))
+        params.append(URLQueryItem(name: "ch.disable", value: "false"))
         params.append(URLQueryItem(name: "weighting", value: weighting.rawValue))
         params.append(contentsOf: algorithm.asParams())
 
